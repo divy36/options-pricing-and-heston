@@ -1,0 +1,17 @@
+{
+  "generated_utc": "2026-10-16T14:50:09.829712+00:00",
+  "quantlib_version": "1.43",
+  "scenarios": 900,
+  "comparisons": 5400,
+  "failed_comparisons": 0,
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 1e-09,
+  "maximum_absolute_errors": {
+    "price": 8.526512829121202e-14,
+    "delta": 2.0650148258027912e-13,
+    "gamma": 3.836930773104541e-13,
+    "vega": 5.986322548778844e-13,
+    "theta": 6.071587677070056e-12,
+    "rho": 3.979039320256561e-13
+  }
+}

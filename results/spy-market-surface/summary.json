@@ -1,0 +1,52 @@
+{
+  "symbol": "SPY",
+  "provider": "Yahoo Finance via yfinance",
+  "snapshot_start": "2026-09-24T18:13:14.644372+00:00",
+  "underlying_asof_utc": [
+    "2026-09-24T18:13:10+00:00",
+    "2026-09-24T18:13:14+00:00",
+    "2026-09-24T18:13:15+00:00",
+    "2026-09-24T18:13:16+00:00"
+  ],
+  "raw_contracts": 2237,
+  "accepted_quotes": 746,
+  "rejection_reasons": {
+    "low_open_interest": 315,
+    "not_forward_otm": 575,
+    "wide_spread": 39,
+    "missing_zero_or_crossed_quote": 135,
+    "outside_moneyness_window": 427
+  },
+  "rate": 0.04,
+  "rate_source": "Flat continuously compounded modelling assumption; not a downloaded yield curve",
+  "dividend": 0.0073742205,
+  "dividend_source": "Yahoo trailing annual dividend yield; continuous-yield proxy, not a forecast",
+  "filters": {
+    "max_relative_spread": 0.4,
+    "min_open_interest": 10,
+    "forward_moneyness": [
+      0.7,
+      1.3
+    ],
+    "days": [
+      7,
+      400
+    ]
+  },
+  "diagnostics": {
+    "usable_expiries": [
+      "2026-10-09",
+      "2026-10-23",
+      "2026-11-20",
+      "2026-12-18",
+      "2027-03-19",
+      "2027-06-17",
+      "2027-09-17"
+    ],
+    "calendar_total_variance_decreases": 0,
+    "calendar_comparable_pairs": 318,
+    "surface_cells": 3660,
+    "supported_cells": 3392
+  },
+  "style": "American ETF/equity prices; European-equivalent BSM IV approximation"
+}

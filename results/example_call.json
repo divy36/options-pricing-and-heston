@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "spot": 100,
+    "strike": 100,
+    "maturity": 1,
+    "rate": 0.05,
+    "volatility": 0.2,
+    "dividend": 0,
+    "kind": "call"
+  },
+  "price": 10.450583572185565,
+  "greeks_raw": {
+    "delta": 0.636830651175619,
+    "gamma": 0.018762017345846895,
+    "vega": 37.52403469169379,
+    "theta": -6.414027546438197,
+    "rho": 53.232481545376345
+  },
+  "implied_volatility": {
+    "volatility": 0.2,
+    "iterations": 4,
+    "price_error": 0.0,
+    "method": "newton"
+  }
+}

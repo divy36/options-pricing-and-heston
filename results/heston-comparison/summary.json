@@ -1,0 +1,168 @@
+{
+  "snapshot": "2026-09-24T18:13:14.644372+00:00",
+  "quote_count": 746,
+  "training_quotes": 501,
+  "holdout_quotes": 245,
+  "rate": 0.04,
+  "dividend": 0.0073742205,
+  "flat_vol": 0.16208563770510276,
+  "expiry_vols": {
+    "2026-10-09": 0.1255339320910602,
+    "2026-10-23": 0.1309964504986668,
+    "2026-11-20": 0.14344709647449305,
+    "2026-12-18": 0.14796058552587646,
+    "2027-03-19": 0.15621046582921194,
+    "2027-06-17": 0.1640561635283083,
+    "2027-09-17": 0.17005086238469755
+  },
+  "heston_parameters": {
+    "v0": 0.017240650994927584,
+    "kappa": 4.6063394123080785,
+    "theta": 0.045696842373692204,
+    "sigma": 1.2523212009131357,
+    "rho": -0.6231865555418679
+  },
+  "feller_margin": -1.147318058168582,
+  "bound_hits": [],
+  "quadrature_max_abs_difference": 0.00013488657521376624,
+  "trials": [
+    {
+      "initial": [
+        0.025,
+        2,
+        0.04,
+        0.4,
+        -0.7
+      ],
+      "parameters": {
+        "v0": 0.017240665151523303,
+        "kappa": 4.606281827656712,
+        "theta": 0.04569694821089253,
+        "sigma": 1.2523104572995447,
+        "rho": -0.6231867606180147
+      },
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "train_rmse": 0.4922834228856244,
+      "seconds": 0.14361008399999997
+    },
+    {
+      "initial": [
+        0.04,
+        1,
+        0.06,
+        0.7,
+        -0.5
+      ],
+      "parameters": {
+        "v0": 0.017240650994927584,
+        "kappa": 4.6063394123080785,
+        "theta": 0.045696842373692204,
+        "sigma": 1.2523212009131357,
+        "rho": -0.6231865555418679
+      },
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 17,
+      "train_rmse": 0.49228342287669064,
+      "seconds": 0.18988820799999995
+    },
+    {
+      "initial": [
+        0.02,
+        5,
+        0.03,
+        0.2,
+        -0.3
+      ],
+      "parameters": {
+        "v0": 0.01724065839976309,
+        "kappa": 4.606298502986829,
+        "theta": 0.045696919947724624,
+        "sigma": 1.2523136573131188,
+        "rho": -0.6231867132897951
+      },
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "train_rmse": 0.49228342287885035,
+      "seconds": 0.14013887499999989
+    }
+  ],
+  "metrics": [
+    {
+      "model": "BSM constant volatility",
+      "split": "train",
+      "n": 501,
+      "price_rmse": 3.329829102310278,
+      "price_mae": 2.4329750070920295,
+      "iv_rmse_percentage_points": 10.33980474443029,
+      "iv_failures": 0,
+      "within_bid_ask_fraction": 0.007984031936127744
+    },
+    {
+      "model": "BSM constant volatility",
+      "split": "holdout",
+      "n": 245,
+      "price_rmse": 3.3317021334543218,
+      "price_mae": 2.4370883019080516,
+      "iv_rmse_percentage_points": 9.570192912172043,
+      "iv_failures": 0,
+      "within_bid_ask_fraction": 0.004081632653061225
+    },
+    {
+      "model": "BSM expiry-specific volatility",
+      "split": "train",
+      "n": 501,
+      "price_rmse": 3.109585350861203,
+      "price_mae": 2.122641981172589,
+      "iv_rmse_percentage_points": 11.506563472753975,
+      "iv_failures": 0,
+      "within_bid_ask_fraction": 0.011976047904191617
+    },
+    {
+      "model": "BSM expiry-specific volatility",
+      "split": "holdout",
+      "n": 245,
+      "price_rmse": 3.115736467287953,
+      "price_mae": 2.125887445641237,
+      "iv_rmse_percentage_points": 11.065726190306274,
+      "iv_failures": 0,
+      "within_bid_ask_fraction": 0.00816326530612245
+    },
+    {
+      "model": "Heston stochastic volatility",
+      "split": "train",
+      "n": 501,
+      "price_rmse": 0.49228342287669064,
+      "price_mae": 0.3541610469764452,
+      "iv_rmse_percentage_points": 3.251590390783856,
+      "iv_failures": 0,
+      "within_bid_ask_fraction": 0.03792415169660679
+    },
+    {
+      "model": "Heston stochastic volatility",
+      "split": "holdout",
+      "n": 245,
+      "price_rmse": 0.48231660897317075,
+      "price_mae": 0.35116713227805246,
+      "iv_rmse_percentage_points": 3.0330132506096104,
+      "iv_failures": 0,
+      "within_bid_ask_fraction": 0.024489795918367346
+    }
+  ],
+  "input_sha256": "ff403dfeb1a8b376bf3c0bc0997a01324f50527a393e096bc1981b865992afd6",
+  "source_summary_sha256": "31764a15480b2dad1c3fe35bd05c3ba3eea89796d39ad4a680e0d370b4b7173c",
+  "code_sha256": {
+    "compare_models.py": "8b787b624faba7e500dd88922ca23f8de1bb50d0c447da72005d83974881d1db",
+    "heston.py": "9dd2446441fdd7eef070df7e0129bb7a7c17d411c4b15314242a5971d48ec800",
+    "model.py": "6889dd390e20073c22ed2b439a8ecef4272af8d8f14d6fe117d55e765d940d4f",
+    "implied.py": "13d74cb309f5a57017bf66b8527689ee6f2a9016421d6c84256194d6debde625"
+  },
+  "versions": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1"
+  }
+}

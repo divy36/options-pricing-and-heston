@@ -1,0 +1,7 @@
+{
+  "scenarios": 160,
+  "max_abs_error": 2.263562420834475e-07,
+  "tolerance": 2e-05,
+  "quantlib_version": "1.43",
+  "failed": 0
+}

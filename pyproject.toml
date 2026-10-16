@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "black-scholes-research"
+version = "0.1.0"
+description = "Black-Scholes and Heston pricing, implied volatility, market surfaces and QuantLib validation"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+validation = ["QuantLib>=1.35", "pytest>=8"]
+comparison = ["numpy>=1.24", "scipy>=1.10", "plotly>=6", "QuantLib>=1.35"]
+surface = ["yfinance>=1.2", "numpy>=1.24", "plotly>=6"]
+
+[project.scripts]
+black-scholes = "black_scholes.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
